@@ -1,16 +1,35 @@
-# React + Vite
+# 🌍 Climate Hazard Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interactive React application that visualizes climate hazards across different regions.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🗺️ Interactive map (Leaflet + Mapbox)
+- 🎯 Multi-filter system:
+  - Hazard (Rain, Snow, Drought)
+  - Probability (Low, Medium, High)
+  - Magnitude (Low, Medium, High)
+- 📍 Dynamic markers based on selected filters
+- 🔄 Reset filters after each apply
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- React (Vite)
+- Leaflet
+- Mapbox
+- JavaScript (ES6)
 
-## React Compiler
+## ⚙️ Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone https://github.com/TO_USERNAME_SOU/weatherforecastapp.git
+cd weatherforecastapp
+npm install
+npm run dev
 
-## Expanding the ESLint configuration
+🔑 Environment Variables
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Create a .env file:
+    VITE_MAPBOX_TOKEN=your_mapbox_token_here
+
+📌 Notes
+The .env file is not included for security reasons
+Demo data is used for hazard visualization
